@@ -1,0 +1,29 @@
+{
+  "name": "bonafide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/app.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "morgan": "^1.6.1",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.5",
+    "jasmine": "^2.3.2",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-requirejs": "^0.2.2",
+    "karma-story-reporter": "^0.3.1",
+    "phantomjs": "^1.9.18",
+    "requirejs": "^2.1.20"
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

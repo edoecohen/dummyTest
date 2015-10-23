@@ -1,0 +1,107 @@
+body {
+	font-size: 1.6em;
+}
+
+/* NAVBAR */
+
+.navbar-logo h1 {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin-bottom: 18px;
+}
+
+.navbar-logo h1 a {
+	color: #9E0000;
+}
+
+.navbar-logo h1 a:hover {
+	text-decoration: none;
+}
+
+
+h1 {
+	font-size: 1.4em;
+}
+
+
+/* TEST STATUSES */
+.statuses {
+	margin-top: 20px;
+}
+
+.test-status {
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #979797;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.first-status {
+	margin-left: 12%;
+}
+
+.running {
+	background-color: #D8D8D8;
+}
+
+.passed {
+	background-color: #0B7F3F;
+	color: white;
+}
+
+.failed {
+	background-color: #AD3C3C;
+	color: white;
+}
+
+
+/* TESTS */
+.tests {
+	margin: 60px 12%;
+	width: 75%;
+}
+
+.start {
+	background-color: #328BAE;
+	color: white;
+}
+
+.start:hover {
+	cursor: pointer;
+}
+
+.tests thead {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	border-bottom: 1px solid #979797;
+}
+
+.tests thead th {
+	padding-bottom: 12px;
+}
+
+.tests .status, .btn-status {
+	text-align: right;
+}
+
+.tests tbody td {
+	padding: 15px 0;
+}
+
+.btn-status {
+	border-radius: 3px;
+	border: 1px solid #979797;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.complete {
+	position: absolute;
+	left: 35%;
+	border: 1px solid grey;
+	padding: 18px 74px;
+	font-size: 1.4em;
+	top: -69px;
+	background: yellow;
+	font-weight: bold;
+	border-radius: 3px;
+}

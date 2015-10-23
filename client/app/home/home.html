@@ -1,0 +1,49 @@
+<div class='col-md-12 fixed'>
+
+	<div class='row statuses'>
+		<div class='col-md-3 first-status'>
+			<div class='test-status running'>Tests Running: {{ vm.statuses.running }}</div>
+		</div>
+		<div class='col-md-3'>
+			<div class='test-status passed'>Passed: {{ vm.statuses.passed }}</div>
+		</div>	
+		<div class='col-md-3'>
+			<div class='test-status failed'>Failed: {{ vm.statuses.failed }}</div>
+		</div>
+	</div>
+
+	<div class='complete' ng-show='vm.statuses.total == vm.tests.length'>All tests have run!</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<table class='tests'>
+				<thead>
+					<tr>
+				     <th>Test</th>
+				     <th class='status'>Status</th>
+					  </tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat='test in vm.tests'>
+						<td>{{ test.description }}</td>
+						<td ng-show='test.result === 1' ng-click='test.run($index)(vm.callback)'>
+							<div class='btn-status start'>Start</div>
+						</td>
+						<td ng-show='test.result === 2'>
+							<div class='btn-status running'>Running</div>
+						</td>
+						<td ng-show='test.result === 3'>
+							<div class='btn-status passed'>
+								Passed
+							</div>
+						</td>
+						<td ng-show='test.result === 4'>
+							<div class='btn-status failed'>Failed</div>
+					  </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
